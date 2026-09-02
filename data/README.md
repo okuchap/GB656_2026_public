@@ -1,7 +1,15 @@
-# Problem Set 1 data
+# Course data
 
-This directory contains the dataset needed by the released Problem Set 1 template
-and preparatory lab.
+This directory contains the datasets needed by the released GB656 problem-set
+templates and preparatory labs. Each notebook first looks for a local file in this
+directory and otherwise loads the same course copy from the public GitHub repository.
+
+## Dataset catalog
+
+| File | Released materials | Upstream terms |
+|---|---|---|
+| `car_price_prediction.csv` | Problem Set 1 and its lab | MIT declaration in the upstream dataset card |
+| `SeoulBikeData.csv` | Problem Set 2 and its lab | Creative Commons Attribution 4.0 International |
 
 ## `car_price_prediction.csv`
 
@@ -31,8 +39,7 @@ listings. It contains 1,000 simulated cars and eight variables.
 The upstream dataset-card metadata declares the dataset license as MIT. The upstream
 repository does not provide a separate license file or copyright notice, so this
 page records the upstream declaration and does not claim ownership of the dataset.
-The repository-wide terms for instructor-authored materials do not replace the
-dataset's upstream terms.
+This course copy remains subject to the dataset's upstream terms.
 
 ### Synthetic-data notes
 
@@ -48,3 +55,29 @@ The assignments therefore use 2022 as the valuation/reference year and define
 `car_age = 2022 - Year`. The resulting ages range from 1 through 22 years. The
 upstream uploader does not document the measurement units, generating code, or an
 earlier source; dollar and mile interpretations are course conventions.
+
+## `SeoulBikeData.csv`
+
+This observed dataset contains 8,760 hourly records and 14 columns describing
+rented-bike counts, time, weather, season, holiday status, and whether the Seoul
+bike-sharing system was functioning.
+
+### Source and course copy
+
+- Publisher and repository: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand)
+- UCI dataset DOI: [`10.24432/C5F62R`](https://doi.org/10.24432/C5F62R)
+- UCI citation: *Seoul Bike Sharing Demand* [Dataset] (2020), UCI Machine
+  Learning Repository
+- Upstream filename: `SeoulBikeData.csv`, distributed in the official
+  [dataset archive](https://archive.ics.uci.edu/static/public/560/seoul+bike+sharing+demand.zip)
+- Course transformation: none; this course copy is byte-for-byte identical to the
+  CSV extracted from the upstream archive
+- Text encoding: Latin-1
+- SHA-256: `373339b71a8935d69e9af0abf26a70744632119862eeb3919efb389a7b749c60`
+- Released course use: `problem-sets/03-02-template.ipynb` and
+  `problem-sets/lab-lectures/03-02-lab.ipynb`
+
+UCI distributes this dataset under the
+[Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+That license permits sharing and adaptation with appropriate attribution. This
+course copy remains subject to the dataset's upstream license.
