@@ -15,6 +15,10 @@ editable problem-set copy.
 | 2 | Problem Set 1 lab | Simple linear regression workflow | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/02-01-lab.ipynb) |
 | 3 | Problem Set 2 template | Multivariate linear regression | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/03-02-template.ipynb) |
 | 3 | Problem Set 2 lab | Multivariate linear regression workflow | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/03-02-lab.ipynb) |
+| 4 | Problem Set 3 template | Credit-card default review policy | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/04-03-template.ipynb) |
+| 4 | Problem Set 3 lab | Logistic regression workflow | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/04-03-lab.ipynb) |
+| 5 | Problem Set 4 template | Cross-validation and model selection | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/05-04-template.ipynb) |
+| 5 | Problem Set 4 lab | Cross-validation and forward selection | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/05-04-lab.ipynb) |
 
 Labs are practice and are not submitted unless the instructor says otherwise.
 Saving a Drive copy of a lab is optional.
@@ -37,11 +41,12 @@ Saving a Drive copy of a lab is optional.
 
 ## Data
 
-The notebooks first look for course data in a local clone and otherwise load the
-same files automatically from this public repository. Students working in Colab do
-not need to upload data or mount Google Drive. Dataset sources, transformations,
-checksums, and upstream licensing declarations are documented in
-[`data/README.md`](data/README.md).
+Most notebooks first look for course data in a local clone and otherwise load the
+same files automatically from this public repository. The Problem Set 3 lab instead
+loads its customer-churn data from a pinned IBM source because that dataset is not
+vendored here. Students working in Colab do not need to upload data or mount Google
+Drive. Dataset sources, transformations, checksums, and upstream terms are documented
+in [`data/README.md`](data/README.md).
 
 ## Troubleshooting
 
