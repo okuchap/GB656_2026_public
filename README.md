@@ -9,16 +9,16 @@ editable problem-set copy.
 
 ## Released materials
 
-| Module | Item | Topic | Status | Open in Colab |
-|---|---|---|---|---|
-| 2 | Problem Set 1 template | Simple linear regression | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/02-01-template.ipynb) |
-| 2 | Problem Set 1 lab | Simple linear regression workflow | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/02-01-lab.ipynb) |
-| 3 | Problem Set 2 template | Multivariate linear regression | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/03-02-template.ipynb) |
-| 3 | Problem Set 2 lab | Multivariate linear regression workflow | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/03-02-lab.ipynb) |
-| 4 | Problem Set 3 template | Credit-card default review policy | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/04-03-template.ipynb) |
-| 4 | Problem Set 3 lab | Logistic regression workflow | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/04-03-lab.ipynb) |
-| 5 | Problem Set 4 template | Cross-validation and model selection | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/05-04-template.ipynb) |
-| 5 | Problem Set 4 lab | Cross-validation and forward selection | Released | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/05-04-lab.ipynb) |
+| Module | Item | Topic | Open in Colab |
+|---|---|---|---|
+| 2 | Problem Set 1 template | Simple linear regression | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/02-01-template.ipynb) |
+| 2 | Problem Set 1 lab | Simple linear regression workflow | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/02-01-lab.ipynb) |
+| 3 | Problem Set 2 template | Multivariate linear regression | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/03-02-template.ipynb) |
+| 3 | Problem Set 2 lab | Multivariate linear regression workflow | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/03-02-lab.ipynb) |
+| 4 | Problem Set 3 template | Credit-card default review policy | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/04-03-template.ipynb) |
+| 4 | Problem Set 3 lab | Logistic regression workflow | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/04-03-lab.ipynb) |
+| 5 | Problem Set 4 template | Cross-validation and model selection | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/05-04-template.ipynb) |
+| 5 | Problem Set 4 lab | Cross-validation and forward selection | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/okuchap/GB656_2026_public/blob/main/problem-sets/lab-lectures/05-04-lab.ipynb) |
 
 Labs are practice and are not submitted unless the instructor says otherwise.
 Saving a Drive copy of a lab is optional.
