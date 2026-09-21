@@ -3,19 +3,22 @@
 This directory contains the datasets vendored for the released GB656 problem-set
 templates and preparatory labs. Most notebooks first look for a local file in this
 directory and otherwise load the same course copy from the public GitHub repository.
-The Problem Set 3 lab instead loads its customer-churn data directly from the pinned
-IBM source documented below; that dataset is not vendored in this repository.
+Two releases instead use pinned external sources: the Problem Set 3 lab loads
+customer-churn data from IBM, and the Module 7 notebooks load synthetic patient-year
+data from the Dissecting Bias project. Neither external dataset is vendored here.
 
 ## Dataset catalog
 
 | File | Released materials | Upstream terms |
 |---|---|---|
 | `car_price_prediction.csv` | Problem Set 1 and its lab | MIT declaration in the upstream dataset card |
-| `SeoulBikeData.csv` | Problem Set 2 and its lab | Creative Commons Attribution 4.0 International |
+| `SeoulBikeData.csv` | Problem Set 2, its lab, and the Problem Set 5 lab | Creative Commons Attribution 4.0 International |
 | `UCI_Credit_Card.csv` | Problem Set 3 | Creative Commons Attribution 4.0 International |
 | `WA_Fn-UseC_-Telco-Customer-Churn.csv` (external only) | Problem Set 3 lab | Not vendored; loaded from a pinned IBM source |
 | `insurance.csv` | Problem Set 4 | Public-domain declaration in the upstream repository |
 | `auto-mpg.csv` | Problem Set 4 lab | Creative Commons Attribution 4.0 International |
+| `residential_building.csv` | Problem Set 5 | Creative Commons Attribution 4.0 International |
+| `data_new.csv` (external only) | Module 7 application notebooks and solutions | No explicit upstream license identified; not vendored |
 
 ## `car_price_prediction.csv`
 
@@ -80,8 +83,9 @@ bike-sharing system was functioning.
   CSV extracted from the upstream archive
 - Text encoding: Latin-1
 - SHA-256: `373339b71a8935d69e9af0abf26a70744632119862eeb3919efb389a7b749c60`
-- Released course use: `problem-sets/03-02-template.ipynb` and
-  `problem-sets/lab-lectures/03-02-lab.ipynb`
+- Released course use: `problem-sets/03-02-template.ipynb`,
+  `problem-sets/lab-lectures/03-02-lab.ipynb`, and
+  `problem-sets/lab-lectures/06-05-lab.ipynb`
 
 UCI distributes this dataset under the
 [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
@@ -184,3 +188,57 @@ UCI distributes this dataset under the
 [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 That license permits sharing and adaptation with appropriate attribution. This
 course copy remains subject to the dataset's upstream license.
+
+## `residential_building.csv`
+
+This observed dataset contains 372 residential-building projects in Tehran, Iran.
+The course CSV has 109 columns: four project-date fields, eight project variables,
+19 economic variables at each of five lags, and two realized outputs (sales price
+and construction cost).
+
+### Source and course copy
+
+- Creator: Mohammad Rafiei
+- Publisher and original source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/437/residential+building+data+set)
+- UCI dataset DOI: [`10.24432/C5S896`](https://doi.org/10.24432/C5S896)
+- UCI citation: Rafiei, M. (2015), *Residential Building* [Dataset], UCI Machine
+  Learning Repository
+- Upstream file: `Residential-Building-Data-Set.xlsx`
+- Course transformation: read the workbook's `Data` sheet; combined its two header
+  rows; renamed the four project-date columns to `start_year`, `start_quarter`,
+  `completion_year`, and `completion_quarter`; normalized project and economic IDs
+  (for example, `V-2` to `v_2` and lagged `V-11` fields to `v_11_lag1` through
+  `v_11_lag5`); renamed `V-9` to `actual_sales_price` and `V-10` to
+  `actual_construction_cost`; retained all 372 rows; and exported the result as CSV
+- Shape: 372 rows and 109 columns
+- SHA-256: `eeee5cd5ce49524ad3513f756f2b7583ba06d1786993fe41007d986f05a22b0d`
+- Released course use: `problem-sets/06-05-template.ipynb`
+
+UCI distributes this dataset under the
+[Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+That license permits sharing and adaptation with appropriate attribution. This
+course copy remains subject to the dataset's upstream license.
+
+## `data_new.csv` (external only)
+
+The Module 7 application uses the public synthetic patient-year dataset released by
+the Dissecting Bias project for reproducibility of Obermeyer et al. (2019),
+*Dissecting racial bias in an algorithm used to manage the health of populations*.
+It contains no original patient records and has 48,784 rows and 160 columns.
+
+### Pinned source used by Module 7
+
+- Project: [Dissecting Bias](https://gitlab.com/labsysmed/dissecting-bias)
+- Related paper DOI: [`10.1126/science.aax2342`](https://doi.org/10.1126/science.aax2342)
+- Pinned source file: [`data_new.csv`](https://gitlab.com/labsysmed/dissecting-bias/-/raw/daceb25bba00e65d7b05882f049e229a8bedb60c/data/data_new.csv)
+- Pinned commit: `daceb25bba00e65d7b05882f049e229a8bedb60c`
+- Shape: 48,784 rows and 160 columns
+- SHA-256: `5341f90f3a1d330557620af1c734e552abe0ad57053055dd13dbccc6d8384d74`
+- Course transformation: none to the downloaded file; each notebook validates only
+  its required columns in memory
+- Released course use: all notebooks under `module_7/`
+
+The pinned upstream revision does not include an explicit license file or license
+statement. The notebooks therefore load the file directly from the pinned upstream
+URL; this repository does not redistribute it or claim ownership or additional
+rights.
