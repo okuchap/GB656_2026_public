@@ -6,3 +6,7 @@
 .env
 .env.*
 !.env.example
+module_7/07-02-understand-data_instructor.ipynb
+module_7/07-03-audit-illness_instructor.ipynb
+module_7/07-04-audit-cost_instructor.ipynb
+module_7/07-05-rebuild-models_instructor.ipynb
