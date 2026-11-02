@@ -12,18 +12,22 @@ specifies the approved project choices and deliverables.
 
 ## Migration status
 
-This initial migration changes the notebook/Colab links and input data locations
-to this repository. CSV contents, modeling code, explanations, and saved notebook
-outputs are otherwise preserved. Substantive notebook revision is pending, so
-the inherited competition and submission wording does not state the 2026 course
-requirements.
+The notebooks use this repository's Colab links and input data locations. Clear
+typos, factual source descriptions, and discrete code defects have been corrected.
+These include the wine false-positive/false-negative rate formulas, a wrongly
+printed matrix, a hard-coded error calculation, the car notebook's undefined
+prediction variable, and the accidental reuse of diagnostic predictions as a
+feature. The retained competition prediction/export segment is labeled as an
+optional historical illustration. CSV contents are unchanged.
 
-Known issues awaiting revision include the wine example's false-positive and
-false-negative rate formulas, threshold selection using test results, and
-preprocessing before cross-validation folds. The car example needs a labeled
-held-out evaluation, training-only preprocessing, correction of a stray undefined
-variable, and removal of a prediction column inadvertently reused as a feature.
-Saved outputs should be regenerated after those corrections.
+Broader modeling revisions remain under discussion: wine threshold selection
+using test results and preprocessing before cross-validation folds, and the car
+example's labeled held-out evaluation and training-only preprocessing. Existing
+feature choices, models, split designs, and export code remain in place. Corrected
+wine summary outputs were recalculated from stored confusion matrices. The car
+prediction display and filtered-model residual plot were cleared because their
+corrected outputs require rerunning the notebook. The filtered fit will change
+when rerun.
 
 ## Files
 
