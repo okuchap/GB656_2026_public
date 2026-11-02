@@ -26,8 +26,8 @@ example's labeled held-out evaluation and training-only preprocessing. Existing
 feature choices, models, split designs, and export code remain in place. Corrected
 wine summary outputs were recalculated from stored confusion matrices. The car
 prediction display and filtered-model residual plot were cleared because their
-corrected outputs require rerunning the notebook. The filtered fit will change
-when rerun.
+corrected outputs require rerunning the notebook. The corrected filtered fit and residual plot must be regenerated before
+interpreting their results.
 
 ## Files
 
